@@ -6,22 +6,22 @@ import pg from "pg";
 const app = express();
 const port = 3000;
 
-const db = new pg.Client({
+// const db = new pg.Client({
  
-});
+// });
 
-db.connect();
+// db.connect();
 
 let quiz = [];
 
-db.query("SELECT * FROM capitals",(err, res) => {
-  if(err){
-    console.error("Error executing qeury", err.stack);
-  }else{
-    quiz = res.rows;
-  }
-  db.end();
-})
+// db.query("SELECT * FROM capitals",(err, res) => {
+//   if(err){
+//     console.error("Error executing qeury", err.stack);
+//   }else{
+//     quiz = res.rows;
+//   }
+//   db.end();
+// })
 
 let totalCorrect = 0;
 
