@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap');
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(../images/keyboard-6985517.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url(../images/keyboard-6985517.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  width: 700px;
+}
+
+#score{
+  font-size:  40px;
+  color: rgb(2, 2, 63);
+}
+
+.laid{
+  background-image: url(../images/earth-lie.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 450px;
+  position: absolute;
+  top: -10px;
+  left: 45%;
+  z-index: 2;
+}
+
+.laid:hover{
+  scale: 0.99;
+}
+
+
+
+h1 {
+  text-align: center;
+  color:rgb(2, 2, 63);
+  background-color: rgba(220, 220, 220, 0.11);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 50px;
+
+}
+
+h3 {
+  margin: 0;
+  color:rgb(2, 2, 63);
+  font-size: 30px;
+  background-color: rgba(220, 220, 220, 0.11);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 45px;
+
+}
+
+.answer-container {
+  width: 100%;
+  text-align: center;
+
+}
+
+input {
+  outline: none;
+  border: none;
+  text-align: center;
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+
+  
+}
+
+button {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: large;
+  display: block;
+  width: 100%; 
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.horizontal-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button:hover {
+  background-color:rgb(2, 2, 63);
+  color: white;
+}
+
+#result {
+  text-align: center;
+  font-size: 24px;
+}
+
+.checkmark {
+  color: transparent;
+  animation: checkmark 0.5s ease;
+}
+
+.cross {
+  color: transparent;
+  animation: cross 0.5s ease;
+}
+
+@keyframes checkmark {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: green;
+  }
+}
+
+@keyframes cross {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.restart-button {
+  position: absolute;
+  height: 60px;
+  width: 160px;
+  top: 50%;
+  left: 45%;
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  /* padding: 15px 15px; */
+  
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.restart-button:hover{
+  background-color: rgb(2, 2, 63);
+  color: white;
+  scale: 1.05;
+
+}
+
+.heart{
+  background-image: url(../images/Earth-Chan\,\ personif\ heart.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  width: 450px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+
+.heart:hover{
+  scale: 0.99;
+}

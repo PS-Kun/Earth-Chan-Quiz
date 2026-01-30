@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+body{
+    height:100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/keyboard-6985517.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: none;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+
+}
+
+.sponsor{
+    font-size: 60px;
+    position: absolute;
+    top: 5%;
+    /* background-color: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(10px); */
+    background-color:  rgb(6, 6, 102);
+    color: green;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.change{
+    height: 100%;
+    width: 100%; 
+}
+
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.earth-chan{
+    height: 400px;
+    width: 350px;
+    background-image: url(../images/Earth-Chan\,\ personif.png);
+    background-size: cover;
+    position: absolute;
+    top: 45%;
+    left:75%;
+}
+
+.earth-chan:hover{
+    scale: 0.99;
+}
+
+.quizKing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    width: 450px;
+    background-color: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    font-size: 50px;
+    color: green;
+
+}
+
+.button{
+    position: absolute;
+    top: 80%;
+    height: 90px;
+    /* background-color: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(10px); */
+    background-color: white;
+
+    border-radius: 30px;
+    font-size: 45px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    
+
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: rgb(2, 2, 63);
+    /* background-color: rgba(220, 220, 220, 0.11);
+    backdrop-filter: blur(10px); */
+    color: white;
+}
+
+
