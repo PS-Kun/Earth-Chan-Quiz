@@ -1,27 +1,33 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
-// const db = new pg.Client({
- 
-// });
+const db = new pg.Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl:{
+    rejectUnauthorized: false,
+  },
+});
 
-// db.connect();
+db.connect();
 
 let quiz = [];
 
-// db.query("SELECT * FROM capitals",(err, res) => {
-//   if(err){
-//     console.error("Error executing qeury", err.stack);
-//   }else{
-//     quiz = res.rows;
-//   }
-//   db.end();
-// })
+db.query("SELECT * FROM capitals",(err, res) => {
+  if(err){
+    console.error("Error executing qeury", err.stack);
+  }else{
+    quiz = res.rows;
+  }
+  db.end();
+})
 
 let totalCorrect = 0;
 
@@ -70,6 +76,6 @@ async function nextQuestion() {
   currentQuestion = randomCountry;
 }
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
